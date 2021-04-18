@@ -1,0 +1,20 @@
+HANA cloud credentials
+DBADMIN / Test@1234
+
+*) Identity Authentication, authorization
+URL flow
+https://help.sap.com/viewer/4505d0bdaf4948449b7f7379d24d0f0d/2.0.03/en-US/bcf95f78ce254b42bbe1efc4d29c0f24.html
+
+https://foodie-approuter-ff302193trial.cfapps.eu10.hana.ondemand.com/protected/share
+
+https://ff302193trial.authentication.eu10.hana.ondemand.com/oauth/authorize?response_type=code&client_id=sb-node-foodie-xsuaa!t58362&redirect_uri=https://foodie-approuter-ff302193trial.cfapps.eu10.hana.ondemand.com/login/callback
+
+
+Get token (from service bindings of foodie-approuter)
+https://ff302193trial.authentication.eu10.hana.ondemand.com/oauth/token?grant_type=client_credentials
+
+SAP cloud SDK
+https://sap.github.io/cloud-sdk/docs/java/guides/cloud-foundry-xsuaa-service/
+
+using postman
+https://sapbazar.com/articles/item/2544-using-postman-for-api-testing-with-xsuaa

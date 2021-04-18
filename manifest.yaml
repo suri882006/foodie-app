@@ -1,0 +1,11 @@
+---
+applications:
+
+- name: foodie
+  memory: 1024M
+  timeout: 300
+  random-route: false
+  path: target/foodie-0.0.1-SNAPSHOT.war
+  services:
+    - foodie-hana-service
+    - foodie-xsuaa
