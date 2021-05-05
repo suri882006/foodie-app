@@ -3,9 +3,14 @@ applications:
 
 - name: foodie
   memory: 1024M
-  timeout: 300
+  timeout: 600
   random-route: false
+  routes:
+    - route: foodie.cfapps.eu10.hana.ondemand.com
   path: target/foodie-0.0.1-SNAPSHOT.war
+  server:
+    port: ${VCAP_APP_PORT}
   services:
     - foodie-hana-service
     - foodie-xsuaa
+    - foodie-saas-registry
