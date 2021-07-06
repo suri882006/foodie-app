@@ -18,3 +18,9 @@ https://sap.github.io/cloud-sdk/docs/java/guides/cloud-foundry-xsuaa-service/
 
 using postman
 https://sapbazar.com/articles/item/2544-using-postman-for-api-testing-with-xsuaa
+
+
+https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/ed08c7dcb35d4082936c045e7d7b3ecd.html
+
+Swagger for SaaS Registry service
+https://saas-manager.cfapps.eu10.hana.ondemand.com/swagger-ui.html

@@ -35,9 +35,8 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
         log.error("################### in configAdapter");
         http.
 		authorizeRequests().
-        antMatchers("/**").authenticated().
+        //antMatchers("/**").authenticated().
         antMatchers("/protected/**").hasAuthority("share").
-        antMatchers("/**").permitAll().
         and().authorizeRequests().
         anyRequest().authenticated().
 		//.and().authorizeRequests().

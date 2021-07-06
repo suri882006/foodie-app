@@ -29,4 +29,14 @@ public class TenantController {
         //return "https://"+tenantId+"foodie-approuter-ff302193trial.cfapps.eu10.hana.ondemand.com"; 
         // https://815f3919-45d4-46fb-933c-6a1dbdd7ad7bfoodie-approuter-ff302193trial.cfapps.eu10.hana.ondemand.com/
     }
+    
+    @RequestMapping(value = "/callback/v1.0/tenants/{tenantId}",
+			method = RequestMethod.DELETE)
+    public String unsubscribe(@PathVariable("tenantId")String tenantId, @RequestBody SubscriptionModel subscriptionModel) {
+        log.error("@@@@@@@@@@@@@@33 inside unsubscribe event "+subscriptionModel.toString());
+        log.error("https://"+subscriptionModel.getSubscribedSubdomain()+"-foodie-approuter-foodie.cfapps.eu10.hana.ondemand.com");
+        return "https://"+subscriptionModel.getSubscribedSubdomain()+"-foodie-approuter-foodie.cfapps.eu10.hana.ondemand.com";
+        //return "https://"+tenantId+"foodie-approuter-ff302193trial.cfapps.eu10.hana.ondemand.com"; 
+        // https://815f3919-45d4-46fb-933c-6a1dbdd7ad7bfoodie-approuter-ff302193trial.cfapps.eu10.hana.ondemand.com/
+    }
 }
